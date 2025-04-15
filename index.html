@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAVE - Grupo Integral Para la Ingeniería</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="photos/Logo-Cave.svg" alt="Logo CAVE" width="150" height="65" loading="lazy">
+        </div>
+        <button class="header__menu-btn" aria-label="Menú" aria-expanded="false">
+            <span class="menu-icon">☰</span>
+        </button>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link Inicio">INICIO</a></li>
+                <li><a href="nosotros.html" class="nav__link nosotros">NOSOTROS</a></li>
+                <li><a href="servicios.html" class="nav__link servicios">SERVICIOS</a></li>
+                <li><a href="proyectos.html" class="nav__link proyectos">PROYECTOS</a></li>
+                <li><a href="contacto.html" class="nav__link contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop class="hero__video" aria-label="Video de fondo">
+            <source src="photos/fondo_video.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="hero__content">
+            <div class="hero__buttons">
+                <a href="servicios.html" class="hero__btn hero__btn--services">
+                    <i class="fas fa-cogs" aria-hidden="true"></i> Nuestros Servicios
+                </a>
+                <a href="contacto.html" class="hero__btn hero__btn--contact">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> Contáctanos
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="about-company">
+        <section class="about-container">
+            <div class="about-image">
+                <img src="photos/Imagen1.jpg" alt="Imagen de CAVE" loading="lazy">
+            </div>
+            <div class="about-content">
+                <span class="about-subtitle">NUESTRA COMPAÑÍA</span>
+                <h2 class="about-title">CAVE Grupo Integral Para la Ingeniería</h2>
+                <p class="about-description">
+                    Fue fundada en 2014 con el objetivo de contribuir al desarrollo de México mediante la experiencia y compromiso de sus integrantes. La empresa reúne a expertos en construcciones hidráulicas y obras civiles, incluyendo funcionarios públicos, investigadores
+                    y empresarios del sector.
+                </p>
+                <div class="tabs-system">
+                    <!-- Radio buttons ocultos -->
+                    <input type="radio" id="tab1" name="compania-tabs" checked class="tab-radio">
+                    <input type="radio" id="tab2" name="compania-tabs" class="tab-radio">
+                    <!-- Menú de pestañas -->
+                    <div class="tabs-menu">
+                        <label for="tab1" class="tab-btn">Misión</label>
+                        <label for="tab2" class="tab-btn">Valores</label>
+                    </div>
+                    <!-- Contenido de las pestañas -->
+                    <div class="tabs-content">
+                        <div class="tab-panel" data-tab="tab1">
+                            <ul>
+                                <p> Ser una compañía con espíritu de servicio, que ejecute obras de calidad, con las más recientes innovaciones tecnológicas y a través de un proceso de mejora continua en todas sus actividades; comprometida con sus empleados,
+                                    con el desarrollo de México y con la preservación del medio ambiente. </p>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" data-tab="tab2">
+                            <ul>
+                                <li>El Cliente es lo más importante.</li>
+                                <li>Invertir en Nuestro Recurso Humano.</li>
+                                <li>Brindar Beneficios Sociales y Económicos a la Comunidad.</li>
+                                <li>Respetar el Medio Ambiente.</li>
+                                <li>Promover la honestidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!------ Sección de Nuestros Servicios ----->
+    <div class="services">
+        <div class="subtitulo">
+            <a class="our-servicios">NUESTROS SERVICIOS</a>
+            <h2 class="specialization-title">Especialistas en todas las ramas de la hidráulica</h2>
+            <p class="specialization-description">
+                Sectorización y Eficiencia Energética de sistemas de agua potable
+            </p>
+        </div>
+        <div class="tab">
+            <button class="tablinks active" onmouseover="openCity(event, 'London')">PROYECTO EJECUTIVO </button>
+            <button class="tablinks" onmouseover="openCity(event, 'Paris')">EJECUCIÓN DE OBRA</button>
+            <button class="tablinks" onmouseover="openCity(event, 'nipon')">LABORATORIO</button>
+            <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">SUPERVISIONES </button>
+        </div>
+        <div id="London" class="tabcontent">
+            <h3>PROYECTO EJECUTIVO</h3>
+            <ul>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>AGUA POTABLE</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>ALCANTARILLADO SANITARIO</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>SANEAMIENTO</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>HIDRÁULICA DE CANALES</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>INGENIERÍA INTEGRAL</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>UNIDADES DE RIEGO</a></li>
+            </ul>
+        </div>
+        <div id="Paris" class="tabcontent">
+            <h3>EJECUCIÓN DE OBRA</h3>
+            <ul>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>AGUA POTABLE</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>ALCANTARILLADO SANITARIO</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>SANEAMIENTO</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>BORDOS Y RECUPERACIONES HIDRA</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>INGENIERÍA INTEGRAL</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>UNIDADES DE RIEGO</a></li>
+            </ul>
+        </div>
+        <div id="nipon" class="tabcontent">
+            <h3>LABORATORIO</h3>
+            <ul>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>TOPOGRAFÍA</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>GEOTECNIA</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>CALIDAD DEL AGUA</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>GEOHIDROLOGÍA</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>GEOFÍSICA</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>IMPACTO AMBIENTAL</a></li>
+            </ul>
+        </div>
+        <div id="Tokyo" class="tabcontent">
+            <h3>SUPERVISIONES</h3>
+            <ul>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>HIDRÁULICA EN GENERAL</a></li>
+                <li><a href="servicios.html"><i class="fa-solid fa-arrow-right"></i>UNIDADES DE RIEGO</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <!------------------ Sección Portafolio ------------------->
+    <section class="portfolio">
+        <h2 class="portfolio-title">PROYECTOS REALIZADOS</h2>
+        <div class="portfolio-container">
+            <article class="project">
+                <img src="photos/proyecto2.JPG" alt="Proyecto 1" loading="lazy" width="500" height="300">
+                <div class="project-info">
+                    <p><strong>AÑO DE EJECUCIÓN:</strong> 2018</p>
+                    <p><strong>DEPENDENCIA:</strong> CAPASEG.</p>
+                    <p>Modernización de la red de agua en Chilpancingo, Guerrero, con sectorización, reforzamiento de tuberías y control de presiones.</p>
+                </div>
+            </article>
+            <article class="project">
+                <img src="photos/proyecto4-4.jpg" alt="Proyecto 2" loading="lazy" width="500" height="300">
+                <div class="project-info">
+                    <p><strong>AÑO DE EJECUCIÓN:</strong> 2024</p>
+                    <p><strong>DEPENDENCIA:</strong> CONAGUA.</p>
+                    <p>Limpieza y desazolve de canales (La Garita, Hornos Insurgentes y Aguas Blancas) para reducir inundaciones en Acapulco, Guerrero.</p>
+                </div>
+            </article>
+        </div>
+        <h2 class="portfolio-title">OBRAS EJECUTADAS</h2>
+        <div class="portfolio-container">
+            <article class="project">
+                <img src="photos/obra1.jpg" alt="Proyecto 1" loading="lazy" width="500" height="300">
+                <div class="project-info">
+                    <p><strong>AÑO DE EJECUCIÓN:</strong> 2022-2023</p>
+                    <p><strong>DEPENDENCIA:</strong> CONAGUA.</p>
+                    <p>Tecnificación de infraestructura hidroagrícola con tubería de PEAD RD 41 de 24" en la Unidad de Riego Aguas Blancas, Coyuca de Benítez, Guerrero.</p>
+                </div>
+            </article>
+            <article class="project">
+                <img src="photos/obra3.jpg" alt="Proyecto 2" loading="lazy" width="500" height="300">
+                <div class="project-info">
+                    <p><strong>AÑO DE EJECUCIÓN:</strong> 2023-2023</p>
+                    <p><strong>DEPENDENCIA:</strong> CAPASEG.</p>
+                    <p>Construcción del sistema de agua potable en Cruz Verde, Iliatenco, Guerrero.</p>
+                </div>
+            </article>
+        </div>
+        <div class="portfolio-cta">
+            <h3>¡CONSTRUYAMOS JUNTOS TU PROYECTO!</h3>
+            <div class="cta-buttons">
+                <a href="contacto.html" class="cta-btn contact-btn">
+                    <i class="fas fa-envelope" aria-hidden="true"></i><span>CONTÁCTANOS</span>
+                    <span>→</span>
+                </a>
+                <a href="proyectos.html" class="cta-btn projects-btn">
+                    <span>VER MÁS PROYECTOS</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Logo y descripción -->
+            <div class="footer-brand">
+                <img src="photos/Logo-Cave.svg" alt="CAVE Logo" width="180" height="60" loading="lazy">
+                <p class="footer-description">Grupo Integral Para la Ingeniería, especializado en construcciones hidráulicas y obras civiles.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3 class="footer-title">Contacto</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i>PRIVADA DE BUGAMBILIAS #4, PLANTA ALTA DEPTO.1. CHILPANCINGO DE LOS BRAVO, GRO. C.P. 39074. </p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+527474946331">7474946331</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:grupointegralcave@gmail.com">grupointegralcave@gmail.com</a></p>
+                    <p><i class="fas fa-clock"></i> Lunes-Viernes: 9:00 - 18:00</p>
+                </address>
+            </div>
+            <!-- Boletín informativo -->
+            <div class="footer-newsletter">
+                <h3 class="footer-title">Suscríbete</h3>
+                <p>Recibe las últimas noticias y proyectos.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="subscribe-btn">
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; <span id="year"></span> CAVE Grupo Integral. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="terminos.html">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

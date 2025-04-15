@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAVE - Grupo Integral Para la Ingeniería</title>
+    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img loading="lazy" src="photos/Logo-Cave.svg" alt="Logo CAVE" width="150" height="65" loading="lazy">
+        </div>
+        <button class="header__menu-btn" aria-label="Menú" aria-expanded="false">
+            <span class="menu-icon">☰</span>
+        </button>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link Inicio">INICIO</a></li>
+                <li><a href="nosotros.html" class="nav__link nosotro1">NOSOTROS</a></li>
+                <li><a href="servicios.html" class="nav__link servicios">SERVICIOS</a></li>
+                <li><a href="proyectos.html" class="nav__link proyectos">PROYECTOS</a></li>
+                <li><a href="contacto.html" class="nav__link contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-----------seccion de servicios ----------->
+    <section class="services">
+        <video autoplay muted loop class="nosotros-video">
+            <source src="photos/video-Encavezado.mp4" type="video/mp4">
+        </video>
+        <div class="services-contenido">
+            <div class="servicios-texto">
+                <h2>SERVICIOS</h2>
+            </div>
+        </div>
+    </section>
+    <!---------proyecto ejecutivo contenedor-->
+    <section class="our-projects">
+        <h2 class="section-title">proyecto ejecutivo</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <img loading="lazy" src="photos/Agua portable.png" alt="Levantamientos Topográficos">
+                <div class="project-caption">
+                    <i class="fas fa-tint project-icon"></i>
+                    <p>AGUA POTABLE</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/ALCANTARILLADO SANITARIO P-J.jpg" alt="Levantamientos catastrales">
+                <div class="project-caption">
+                    <i class="fas fa-recycle project-icon"></i>
+                    <p>ALCANTARILLADO SANITARIO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/SANEAMIENTO-P-E.png" alt="Estudios de Planeación">
+                <div class="project-caption">
+                    <i class="fas fa-broom project-icon"></i>
+                    <p>SANEAMIENTO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/HIDRAULICA DE CANALES-P-O.jpg" alt="Modelación de redes">
+                <div class="project-caption">
+                    <i class="fas fa-water project-icon"></i>
+                    <p>HIDRÁULICA DE CANALES</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/INGENIERIA INTEGRAL-P-E.jpg" alt="Análisis de transitorios hidráulicos">
+                <div class="project-caption">
+                    <i class="fas fa-cogs project-icon"></i>
+                    <p>INGENIERÍA INTEGRAL</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/UNIDADES DE RIEGO-P-E.png" alt="Evaluación de Pérdidas de Agua Potable">
+                <div class="project-caption">
+                    <i class="fas fa-tractor project-icon"></i>
+                    <p>UNIDADES DE RIEGO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+        </div>
+        <div id="panel1" class="slide-panel">
+            <button class="close-panel">&times;</button>
+            <div class="panel-content">
+                <h3>Escríbenos:</h3>
+                <form id="myForm" class="panel-form" action="https://formspree.io/f/xoverqdv" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre" required aria-label="Nombre">
+                    <input type="email" name="email" placeholder="Email" required aria-label="Email">
+                    <input type="text" name="empresa" placeholder="Empresa" aria-label="Empresa">
+                    <input type="tel" name="telefono" placeholder="Teléfono" required aria-label="Teléfono">
+                    <textarea name="mensaje" placeholder="Mensaje" required aria-label="Mensaje"></textarea>
+                    <button type="submit" class="form-submit-btn">ENVIAR</button>
+                    <div id="form-message" style="display: none; padding: 10px; margin-top: 15px; border-radius: 6px; text-align: center;"></div>
+                </form>
+                <div class="form-message" style="display: none; margin-top: 15px; color: #4CAF50; text-align: center;"></div>
+            </div>
+        </div>
+    </section>
+    <!---------ejecucion de obra-->
+    <section class="our-obra">
+        <h2 class="section-title">EJECUCIÓN DE OBRA</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <img loading="lazy" src="photos/AGUA POTABLE-E-O.jpg" alt="Levantamientos Topográficos">
+                <div class="project-caption">
+                    <i class="fas fa-tint project-icon"></i>
+                    <p>AGUA POTABLE</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/ALCANTARILLADO SANITARIO E-O.jpg" alt="Levantamientos catastrales">
+                <div class="project-caption">
+                    <i class="fas fa-recycle project-icon"></i>
+                    <p>ALCANTARILLADO SANITARIO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/SANEAMIENTO-E-O.jpg" alt="Estudios de Planeación">
+                <div class="project-caption">
+                    <i class="fas fa-broom project-icon"></i>
+                    <p>SANEAMIENTO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/BORDOS Y RECUPERACIONES HIDRA-E-O.png" alt="Modelación de redes">
+                <div class="project-caption">
+                    <i class="fas fa-layer-group project-icon"></i>
+                    <p>BORDOS Y RECUPERACIONES HIDRA</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/INGENIERIA INTEGRAL-E-O.jpg" alt="Análisis de transitorios hidráulicos">
+                <div class="project-caption">
+                    <i class="fas fa-cogs project-icon"></i>
+                    <p>INGENIERÍA INTEGRAL</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/UNIDADES DE RIEGO-E-O.png" alt="Evaluación de Pérdidas de Agua Potable">
+                <div class="project-caption">
+                    <i class="fas fa-tractor project-icon"></i>
+                    <p>UNIDADES DE RIEGO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+        </div>
+        <script src="servicios.js"></script>
+    </section>
+    <!---------ESTUDIOS Y LABORATORIO----------->
+    <section class="our-projects">
+        <h2 class="section-title">LABORATORIO</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <img loading="lazy" src="photos/TOPOGRAFIA.jpg" alt="Levantamientos Topográficos">
+                <div class="project-caption">
+                    <i class="fas fa-map-marked-alt project-icon"></i>
+                    <p>TOPOGRAFÍA</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <img loading="lazy" src="photos/GEOTECNIA.jpeg" alt=" catastrales ">
+                <div class="project-caption ">
+                    <i class="fas fa-mountain project-icon "></i>
+                    <p>GEOTECNIA</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item ">
+                <img loading="lazy" src="photos/CALIDAD DE AGUA.jpeg " alt="Estudios de Planeación ">
+                <div class="project-caption ">
+                    <i class="fas fa-flask project-icon "></i>
+                    <p>CALIDAD DE AGUA</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item ">
+                <img loading="lazy" src="photos/GEOHIDROLOGIA.jpeg " alt="Modelación de redes ">
+                <div class="project-caption ">
+                    <i class="fas fa-water project-icon "></i>
+                    <p>GEOHIDROLOGÍA</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item ">
+                <img loading="lazy" src="photos/GEOFISICA.jpeg " alt="Análisis de transitorios hidráulicos ">
+                <div class="project-caption ">
+                    <i class="fas fa-satellite-dish project-icon "></i>
+                    <p>GEOFÍSICA</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item ">
+                <img loading="lazy" src="photos/IMPACTO AMBIENTAL.JPG " alt="Evaluación de Pérdidas de Agua Potable ">
+                <div class="project-caption ">
+                    <i class="fas fa-leaf project-icon "></i>
+                    <p>IMPACTO AMBIENTAL</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------SUPERVICIONES----------->
+    <section class="our-supervisiones ">
+        <h2 class="section-title ">SUPERVISIONES</h2>
+        <div class="project-grid ">
+            <div class="project-item ">
+                <img loading="lazy" src="photos/HIDRAULICA EN GENERAL.jpg " alt="Análisis de transitorios hidráulicos ">
+                <div class="project-caption ">
+                    <i class="fas fa-tools project-icon "></i>
+                    <p>HIDRÁULICA EN GENERAL</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+            <div class="project-item ">
+                <img loading="lazy" src="photos/UNIDADES DE RIEGO.JPG " alt="Evaluación de Pérdidas de Agua Potable ">
+                <div class="project-caption ">
+                    <i class="fas fa-tractor project-icon "></i>
+                    <p>UNIDADES DE RIEGO</p>
+                    <button class="slide-panel-btn" data-panel="panel1">CONTACTANOS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--pie de pagina -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img loading="lazy" src="photos/Logo-Cave.svg" alt="CAVE Logo" width="180" height="60" loading="lazy">
+                <p class="footer-description">Grupo Integral Para la Ingeniería, especializado en construcciones hidráulicas y obras civiles.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3 class="footer-title">Contacto</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i>PRIVADA DE BUGAMBILIAS #4, PLANTA ALTA DEPTO.1. CHILPANCINGO DE LOS BRAVO, GRO. C.P. 39074. </p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+527474946331">7474946331</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:grupointegralcave@gmail.com">grupointegralcave@gmail.com</a></p>
+                    <p><i class="fas fa-clock"></i> Lunes-Viernes: 9:00 - 18:00</p>
+                </address>
+            </div>
+            <!-- Boletín informativo -->
+            <div class="footer-newsletter">
+                <h3 class="footer-title">Suscríbete</h3>
+                <p>Recibe las últimas noticias y proyectos.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="subscribe-btn">
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; <span id="year"></span> CAVE Grupo Integral. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="terminos.html">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
