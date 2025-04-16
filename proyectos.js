@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
                 indiceImagenActual: 0
             },
             {
-                imagenes: ["photos/proyecto2.JPG", "photos/proyecto2-2.jpg", "photos/proyecto2-3.jpg", "photos/proyecto2-4.jpg"],
+                imagenes: ["photos/proyecto2.jpg", "photos/proyecto2-2.jpg", "photos/proyecto2-3.jpg", "photos/proyecto2-4.jpg"],
                 info: ``,
                 indiceImagenActual: 0
             },
