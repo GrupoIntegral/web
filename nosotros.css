@@ -240,15 +240,15 @@ body {
     font-weight: bold;
 }
 
-.company {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 98%;
-    margin: 0 auto;
-    padding: 50px;
-    background-color: #ffffff;
-    align-items: flex-start;
+@media (max-width: 768px) {
+    .nosotros-video {
+        height: 100%;
+        position: absolute;
+    }
+    .nosotros {
+        height: auto;
+        min-height: 6vh;
+    }
 }
 
 
