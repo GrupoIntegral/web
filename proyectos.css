@@ -230,7 +230,16 @@ body {
     object-fit: cover;
     z-index: -2;
 }
-
+@media (max-width: 768px) {
+    .nosotros-video {
+        height: 100%;
+        position: absolute;
+    }
+    .projects {
+        height: auto;
+        min-height: 6vh;
+    }
+}
 .projects-contenido {
     position: relative;
     top: -20px;
