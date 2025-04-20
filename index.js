@@ -47,6 +47,10 @@ window.addEventListener('load', function() {
 
     // Actualizar año automáticamente
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        document.querySelector('.hero__video').play();
+    }
 });
 
 window.addEventListener('load', function() {
