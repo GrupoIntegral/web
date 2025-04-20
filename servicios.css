@@ -239,6 +239,7 @@ body {
     object-fit: cover;
     z-index: -2;
 }
+
 @media (max-width: 768px) {
     .nosotros-video {
         height: 100%;
