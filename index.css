@@ -236,6 +236,22 @@ body {
     z-index: -1;
 }
 
+@media (max-width: 768px) {
+    .hero__video {
+        position: absolute;
+        /* Opcional: prueba con 'fixed' o 'absolute' */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        /* Asegura que el contenedor no colapse */
+    }
+}
+
 .hero__content {
     position: relative;
     top: 30%;
