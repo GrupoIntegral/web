@@ -199,3 +199,14 @@ window.addEventListener('load', function() {
         yearElement.textContent = new Date().getFullYear();
     }
 });
+    document.addEventListener("DOMContentLoaded", function() {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.setAttribute('playsinline', '');
+            video.setAttribute('webkit-playsinline', '');
+            video.play().catch(e => console.log("Error al reproducir:", e));
+        });
+    });
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        document.querySelector('.hero__video').play();
+    }
